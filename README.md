@@ -14,14 +14,16 @@ Summary: Implements a simple key-value style database where character string key
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-filehash-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-filehash-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-filehash-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-filehash-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-filehash-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-filehash-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-filehash-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-filehash-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-filehash-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-filehash-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-filehash-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-filehash-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-filehash/badges/version.svg)](https://anaconda.org/conda-forge/r-filehash)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-filehash/badges/downloads.svg)](https://anaconda.org/conda-forge/r-filehash)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--filehash-green.svg)](https://anaconda.org/conda-forge/r-filehash) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-filehash.svg)](https://anaconda.org/conda-forge/r-filehash) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-filehash.svg)](https://anaconda.org/conda-forge/r-filehash) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-filehash.svg)](https://anaconda.org/conda-forge/r-filehash) |
 
 Installing r-filehash
 =====================
