@@ -17,8 +17,6 @@ source:
 
 build:
   number: 1001
-  skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -29,7 +27,6 @@ requirements:
     - posix                # [win]
     - {{native}}toolchain  # [win]
     - gcc                  # [not win]
-
   run:
     - r-base
     - libgcc  # [not win]
