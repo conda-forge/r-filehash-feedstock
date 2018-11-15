@@ -16,7 +16,7 @@ source:
   sha256: d0e087d338d89372c251c18fc93b53fb24b1750ea154833216ff16aff3b1eaf4
 
 build:
-  number: 1
+  number: 1001
   skip: true  # [win32]
 
   rpaths:
