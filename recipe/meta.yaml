@@ -49,6 +49,8 @@ about:
     are currently available and new formats can easily be incorporated by third parties
     for use in the 'filehash' framework.
   license_family: GPL3
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+
 extra:
    recipe-maintainers:
     - conda-forge/r
