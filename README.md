@@ -3,7 +3,7 @@ About r-filehash
 
 Home: https://cran.r-project.org/package=filehash
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-filehash-feedstock/blob/main/LICENSE.txt)
 
