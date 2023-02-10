@@ -24,13 +24,15 @@ build:
 
 requirements:
   build:
-    - posix                # [win]
+    - posix                      # [win]
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
   host:
     - r-base
+    - r-digest
   run:
     - r-base
+    - r-digest
 
 test:
   commands:
@@ -38,12 +40,15 @@ test:
     - "\"%R%\" -e \"library('filehash')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/web/packages/filehash/index.html
+  home: https://cran.r-project.org/package=filehash
+  dev_url: https://github.com/rdpeng/filehash
   license: GPL (>= 2)
   summary: Implements a simple key-value style database where character string keys are associated with data values that are stored on the disk. A simple interface is provided for inserting, retrieving, and deleting data from the database. Utilities are provided that allow 'filehash' databases to be treated much like environments
     and lists are already used in R. These utilities are provided to encourage interactive and exploratory analysis on large datasets. Three different file formats for representing the database are currently available and new formats can easily be incorporated by third parties for use in the 'filehash' framework.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
