@@ -1,4 +1,4 @@
-{% set version = "2.4-3" %}
+{% set version = "2.4-5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,24 +13,26 @@ source:
     - https://cran.r-project.org/src/contrib/filehash_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/filehash/filehash_{{ version }}.tar.gz
 
-  sha256: f394e2c93233e8ad1c104562ea9349855dc8e303131f559cd59834f9aa3e41bd
+  sha256: 3b1ee2794dd61e525ee44db16611c65957691d77bb26ae481eba988bb55da22c
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - posix                # [win]
+    - posix                      # [win]
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
   host:
     - r-base
+    - r-digest
   run:
     - r-base
+    - r-digest
 
 test:
   commands:
@@ -38,12 +40,15 @@ test:
     - "\"%R%\" -e \"library('filehash')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/web/packages/filehash/index.html
-  license: GPL (>= 2)
+  home: https://cran.r-project.org/package=filehash
+  dev_url: https://github.com/rdpeng/filehash
+  license: GPL-2.0-or-later
   summary: Implements a simple key-value style database where character string keys are associated with data values that are stored on the disk. A simple interface is provided for inserting, retrieving, and deleting data from the database. Utilities are provided that allow 'filehash' databases to be treated much like environments
     and lists are already used in R. These utilities are provided to encourage interactive and exploratory analysis on large datasets. Three different file formats for representing the database are currently available and new formats can easily be incorporated by third parties for use in the 'filehash' framework.
-  license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_family: GPL2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

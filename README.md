@@ -1,13 +1,15 @@
 About r-filehash
 ================
 
-Home: https://cran.r-project.org/web/packages/filehash/index.html
+Home: https://cran.r-project.org/package=filehash
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-filehash-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements a simple key-value style database where character string keys are associated with data values that are stored on the disk. A simple interface is provided for inserting, retrieving, and deleting data from the database. Utilities are provided that allow 'filehash' databases to be treated much like environments and lists are already used in R. These utilities are provided to encourage interactive and exploratory analysis on large datasets. Three different file formats for representing the database are currently available and new formats can easily be incorporated by third parties for use in the 'filehash' framework.
+
+Development: https://github.com/rdpeng/filehash
 
 Current build status
 ====================
@@ -30,35 +32,35 @@ Current build status
               <td>linux_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1134&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1134&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1134&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1134&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1134&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=win&configuration=win_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-filehash-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
