@@ -7,7 +7,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-filehash-feed
 About r-filehash
 ----------------
 
-Home: https://cran.r-project.org/package=filehash
+Home: https://github.com/rdpeng/filehash
 
 Package license: GPL-2.0-or-later
 
@@ -18,7 +18,7 @@ Development: https://github.com/rdpeng/filehash
 About r-filehash
 ----------------
 
-Home: https://cran.r-project.org/package=filehash
+Home: https://github.com/rdpeng/filehash
 
 Package license: GPL-2.0-or-later
 
