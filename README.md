@@ -3,6 +3,7 @@ About r-filehash-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-filehash-feedstock/blob/main/LICENSE.txt)
 
+
 About r-filehash
 ----------------
 
@@ -13,6 +14,7 @@ Package license: GPL-2.0-or-later
 Summary: Implements a simple key-value style database where character string keys are associated with data values that are stored on the disk. A simple interface is provided for inserting, retrieving, and deleting data from the database. Utilities are provided that allow 'filehash' databases to be treated much like environments and lists are already used in R. These utilities are provided to encourage interactive and exploratory analysis on large datasets. Three different file formats for representing the database are currently available and new formats can easily be incorporated by third parties for use in the 'filehash' framework.
 
 Development: https://github.com/rdpeng/filehash
+
 About r-filehash
 ----------------
 
@@ -157,7 +159,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
