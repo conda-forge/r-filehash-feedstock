@@ -1,5 +1,4 @@
 {% set version = "2.4-6" %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,11 +7,9 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: filehash_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/filehash_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/filehash/filehash_{{ version }}.tar.gz
-
+    - {{ cran_mirror }}/src/contrib/filehash_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/filehash/filehash_{{ version }}.tar.gz
   sha256: 558b446ba354c6fa88f694e8d6d068f999d1e7b626164eb2aeacccbb0dee81b1
 
 build:
@@ -24,25 +21,31 @@ build:
 
 requirements:
   build:
-    - posix                      # [win]
-    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('c') }}              # [not win]
+    - {{ compiler('m2w64_c') }}        # [win]
     - {{ stdlib("c") }}          # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
     - {{ stdlib("m2w64_c") }}    # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-digest
   run:
     - r-base
+    - {{ native }}gcc-libs         # [win]
     - r-digest
 
 test:
   commands:
-    - $R -e "library('filehash')"  # [not win]
+    - $R -e "library('filehash')"           # [not win]
     - "\"%R%\" -e \"library('filehash')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/package=filehash
+  home: https://github.com/rdpeng/filehash
   dev_url: https://github.com/rdpeng/filehash
   license: GPL-2.0-or-later
   summary: Implements a simple key-value style database where character string keys are associated with data values that are stored on the disk. A simple interface is provided for inserting, retrieving, and deleting data from the database. Utilities are provided that allow 'filehash' databases to be treated much like environments
